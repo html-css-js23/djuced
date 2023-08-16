@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Password-Protected Website</title>
+    <title>DJSET</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -28,7 +28,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Welcome to the Password-Protected Website</h1>
+        <h1>Please type in password</h1>
         <div class="login-form">
             <input type="password" id="password" placeholder="Enter password">
             <button id="loginBtn">Login</button>
@@ -37,6 +37,7 @@
             <!-- Your customizable content goes here -->
             <p>This is your guide to how to activate your DJ set! Thank you for purchasing this. Alex.V</p>
             <p>1. Download the application <a href="https://www.djuced.com/downloaddjuced/" target="_blank">here.</a></p>
+            <p>2. Open the application.</p>
         </div>
     </div>
     <script>
@@ -47,7 +48,7 @@
         loginButton.addEventListener('click', () => {
             const enteredPassword = passwordInput.value;
 
-            if (enteredPassword === '170823FV') {
+            if (enteredPassword === '170823FV-JPI') {
                 contentDiv.style.display = 'block';
                 passwordInput.value = ''; // Clear the password input
             } else {
