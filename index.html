@@ -1,1 +1,14 @@
+const passwordInput = document.getElementById('password');
+const loginButton = document.getElementById('loginBtn');
+const contentDiv = document.getElementById('content');
 
+loginButton.addEventListener('click', () => {
+    const enteredPassword = passwordInput.value;
+
+    if (enteredPassword === '170823FV') {
+        contentDiv.style.display = 'block';
+        passwordInput.value = ''; // Clear the password input
+    } else {
+        alert('Incorrect password. Please try again.');
+    }
+});
